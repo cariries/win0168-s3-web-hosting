@@ -1,0 +1,77 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+}
+
+.bg-home {
+    background: #005599;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.matchTable, .matchTableMobile {
+    border: none;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    background: #DDDDDD;
+}
+
+.matchTable tr.header, .matchTableMobile tr.header {
+	background-color: #005599;
+	color: white;
+}
+
+.matchTable tr td, .matchTable tr, .matchTableMobile tr td, .matchTableMobile tr {
+	border: 1px solid #ffffff;
+}
+
+.matchTable tr td.noborder, .matchTableMobile tr td.noborder {
+	border-left: 1px solid #FFFFE8;
+}
+
+.matchTable tr td.noborder img, .matchTableMobile tr td.noborder img {
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+.crossbar {
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+	background: #00009f;
+	color: #FFFFFF;
+}
+
+.btn, .btn:hover {
+	font-weight: bold;
+	display: inline-block;
+	background: #00009f;
+	color: #FFFFFF;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	opacity: 0.9;
+}
+
+.btn:hover {
+	color: red  
+}

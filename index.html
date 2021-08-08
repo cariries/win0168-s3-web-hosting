@@ -1,0 +1,85 @@
+
+<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>足球比分、足球即時比分、比分數據</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/date.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="bg-home">
+    <!-- Display this block on desktop device -->
+    <div class="d-none d-md-block">
+        <table class="table matchTable">
+            <thead class="sticky">
+                <tr class="header align-center">
+                    <th colspan="5" class="align-left">
+                        <a class="btn" href="javascript:jumpToCrossBar('matchTable', 'dg1')"><span># 30分鐘內轉盤的賽事</span></a>
+                        <a class="btn" href="javascript:jumpToCrossBar('matchTable', 'dg2')"><span># 其他賽事</span></a>
+                    </th>
+                    <th colspan="2" class="align-center">
+                        <strong><label>自動刷新</label>&nbsp;30&nbsp;<label>秒</label></strong>
+                    </th>
+                    <th colspan="6">
+                        <span>最後更新時間</span><br>
+                        <strong><label class="label-lastModified"></label></strong>
+                    </th>
+                </tr>
+                <tr class="header align-center">
+                    <th width="9%">&nbsp;</th>
+                    <th width="5%">時間</th>
+                    <th width="5%">狀態</th>
+                    <th width="17%">比賽球隊</th>
+                    <th width="6%">比分</th>
+                    <th width="17%">比賽球隊</th>
+                    <th style="width:25px">&nbsp;</th>
+                    <th colspan="3">初盤指數</th>
+                    <th colspan="3">即時指數</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr><td colspan="13">找不到賽事</td></tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="d-block d-md-none">
+        <table class="table matchTableMobile">
+            <thead class="sticky">
+                <tr class="header align-center">
+                    <th colspan="4" class="align-left">
+                        <a class="btn" href="javascript:jumpToCrossBar('matchTableMobile', 'mg1')"><span># 30分鐘內轉盤的賽事</span></a>
+                        <a class="btn" href="javascript:jumpToCrossBar('matchTableMobile', 'mg2')"><span># 其他賽事</span></a>
+                    </th>
+                    <th colspan="2">
+                        <span>最後更新時間</span><br>
+                        <strong><label class="label-lastModified"></label></strong>
+                    </th>
+                </tr>
+                <tr class="header align-center">
+                    <th width="15%">&nbsp;</th>
+                    <th width="8%">時間</th>
+                    <th width="8%">狀態</th>
+                    <th width="30%">比賽球隊</th>
+                    <th width="9%">比分</th>
+                    <th width="30%">比賽球隊</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr><td colspan="6">找不到賽事</td></tr>
+            </tfoot>
+        </table>
+    </div>
+    <script>
+        label_banner1 = "30\u5206\u9418\u5167\u8F49\u76E4\u7684\u8CFD\u4E8B";
+        label_banner2 = "\u5176\u4ED6\u8CFD\u4E8B";
+        reloadTable();
+    </script>
+</body>
+</html>
